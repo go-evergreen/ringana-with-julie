@@ -334,8 +334,6 @@ section{padding:5.5rem 2rem;}
   box-shadow:0 6px 22px rgba(179,137,60,.36) !important;
 }
 .letter-form{margin-top:0;}
-.letter-paper.letter-paper--form-only{padding:2.2rem 2rem 2rem;}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 .letter-sign{font-family:'Caveat',cursive;margin-top:1.4rem;color:var(--pine);font-size:1.75rem;font-weight:500;transform:rotate(-1.2deg);transform-origin:left center;}
 .modal-fine{font-size:.75rem;opacity:.55;margin-top:1.2rem;text-align:left;}
 
@@ -566,9 +564,16 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
   <div class="connect-modal-backdrop" data-close-connect></div>
   <div class="connect-modal-panel letter-panel">
     <button class="connect-modal-close" type="button" aria-label="Close" data-close-connect>&times;</button>
-    <div class="letter-paper letter-paper--form-only">
-      <h2 id="connectModalTitle" class="sr-only">Join the founding list</h2>
+    <div class="letter-paper">
+      <header class="letter-head">
+        <h2 id="connectModalTitle" class="letter-salutation">friend,</h2>
+      </header>
+      <div class="letter-body-copy">
+        <p>I'll personally email you when Ringana arrives in America — launch updates, the products I'm excited to try, and first access if you want to build alongside me.</p>
+      </div>
       <div id="fd-form-modal" class="letter-form"></div>
+      <p class="letter-sign">— Julie</p>
+      <p class="modal-fine">No spam, ever. Just the good stuff, and only until you say otherwise.</p>
     </div>
   </div>
 </div>
